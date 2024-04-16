@@ -89,3 +89,6 @@ This is the place for you to write reflections:
 1. I think Rust doesn't allow us to mutate the content of static variable to prioritize safety and concurrency, also to prevent thread-safety issue like race condition.
 
 #### Reflection Subscriber-2
+1. I have seen lib.rs and from what I understand, this file contains resources that are needed in this tutorial such as compose_error_response function.
+1. With Observer Pattern, each time we want to add more subscriber, we can just extend the code without modifying the existing one. I believe spawning more than one instance of Main app would be harder than spawning more observer, because we have to manage the state and synchronization.
+1. I haven't tried to make my own tests, but I think Postman can be useful in tutorial or group project.
