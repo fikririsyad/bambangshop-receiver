@@ -85,5 +85,7 @@ This is the place for you to write reflections:
 ### Mandatory (Subscriber) Reflections
 
 #### Reflection Subscriber-1
+1. We use RwLock<> instead of Mutex<> because we want multiple threads to read the data simultaneously but only one thread can write or change it at a time, which can be implemented with RwLock<>. Mutex<> only allows one thread to read and write at a time.
+1. I think Rust doesn't allow us to mutate the content of static variable to prioritize safety and concurrency, also to prevent thread-safety issue like race condition.
 
 #### Reflection Subscriber-2
